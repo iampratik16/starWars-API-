@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>login</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet"> -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://images4.alphacoders.com/122/1225689.jpg">
+
+</head>
+
+
+<style>
+    body,html{
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(50deg,
+                                            rgb(0,0,0,0.5)0%
+                                            ,rgb(0,0,0,0.9)100%),
+                                            url("https://images4.alphacoders.com/122/1225689.jpg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+                                            
+                            
+    }
+    .main{
+        width: 20rem;
+
+        /* position: absolute; */
+        /* margin: 10% auto auto 25%; */
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        border-radius: 16px;
+        border-style: hidden;
+        background-color: rgba(211, 208, 208, 0.329);
+        color: white;
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,700;1,700&family=Tilt+Prism&display=swap');
+        font-family: 'IBM Plex Mono', monospace;
+        font-family: 'Tilt Prism', cursive;
+    }
+    #usr{
+        
+        
+    }
+    #pass{
+        position: relative;   
+        margin-top: 1rem;
+    }
+    #btn1{
+        margin-top: 3rem;
+        background-color: rgb(99, 6, 35);
+        color:white;
+        width: 15rem;
+        height: 2.5rem !important;
+        transition: all 0.3s;
+        cursor: pointer;
+
+    }
+    #btn1:hover{
+        background-color:black;
+        color:rgb(165, 254, 88);
+        border-radius: 6px;
+        border-style: inherit;
+        
+
+    }
+    a{
+        color: wheat;
+        text-decoration: none;
+    }
+    .ibox{
+        display: flex;
+        flex-direction: column;
+    }
+    .ibox input, #btn1{
+        width: 15rem;
+        height: 2rem;
+        border-radius: 8px;
+        border:none;
+    }
+   
+    #pass input{
+            /* position: relative; */
+    }
+    .fa-solid{
+            position: absolute;
+            top: 1.4rem;
+            right: 0.5rem;
+
+            
+    }
+    #eyeIcon{
+        height: 32px;
+        width: 32px;
+    }
+    
+</style>
+<body>
+    <div class="main">
+       
+        <form action="">
+            
+           <div class="ibox" id="usr"> username :  <input type="text"></div>
+            <div class="ibox" id="pass">password : <input id="passy" type="password" name="password" id="password"><i class="fa-solid fa-eye" id="showpassword"> <img src="Ionic-Ionicons-Eye.24 (2).png" alt="" id="eyeIcon"> </i></div>
+            
+            <button id="btn1"><a href="s2.html">LogIn</a></button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+<script>
+    const showPassword= document.querySelector("#showpassword");
+    const passwordField= document.querySelector("#passy");
+    showPassword.addEventListener("click",function(){
+        if(passwordField.type==="password"){
+
+            passwordField.type = "text";
+            eyeIcon.src="Ionic-Ionicons-Eye.24 (2).png";
+        }else{
+            passwordField.type = "password";
+            eyeIcon.src="hidden.png";
+        }
+    })
+ </script>
+ <!--<img src="icons8-eye-40.png" alt="" size="35px">-->
+ <!--"https://r.search.yahoo.com/_ylt=Awrx.7i.H.Vkf5EavU.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1692766270/RO=10/RU=https%3a%2f%2fcdnjs.com%2f/RK=2/RS=35TAc8KmGL_q1IlhgXQAcssLiYQ--->
+ <!--https://images.unsplash.com/photo-1601132359864-c974e79890ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80-->

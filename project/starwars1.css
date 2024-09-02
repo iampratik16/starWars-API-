@@ -1,0 +1,38 @@
+body{
+            
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Trumpwallpapers\ -\ Star\ Wars\,\ Comic\,\ Robots\,\ Alien\,\ Gun\,\ Darth\ Vader\,\ TV\ Show\,\ Illustration\,\ Storm\ Trooper.jpg");
+    color: azure;
+}
+.header{
+    background-color: rgba(233, 233, 233, 0.5);
+    padding: 50px;
+    color: rgb(6, 1, 14);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    margin: 1rem;
+    text-align: center;
+    width: 90%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: rgb(102, 10, 249,0.59);
+    color: aliceblue;
+    border-style: hidden;
+    border-radius: inherit;
+    
+}
+button:hover{
+    border: 1px solid rgb(102, 10, 249,0.59);
+    color: rgb(114, 10, 240);
+    background-color: aliceblue;
+    transition: 1s;
+
+}
